@@ -1,0 +1,12 @@
+.container {
+  padding: 0 19.5rem;
+  margin: 0 auto;
+  width: 1440px;
+  @media (max-width: $extra-extra-large) {
+    padding: 0 8rem;
+    width: 100%;
+  }
+  @media (max-width: $extra-large) {
+    padding: 0 4rem;
+  }
+}

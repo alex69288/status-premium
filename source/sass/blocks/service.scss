@@ -1,0 +1,75 @@
+.service {
+  padding-top: 7rem;
+  padding-bottom: 2.1rem;
+  background-color: #121920;
+  @media (max-width: $large) {
+    padding-top: 4px;
+  }
+  color: #fff;
+  &__list {
+    margin-top: 3.3rem;
+    display: flex;
+    justify-content: space-around;
+    column-gap: 3rem;
+    list-style: none;
+    @media (max-width: $extra-large) {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 3rem;
+    }
+    @media (max-width: 1130px) {
+      margin-left: auto;
+      margin-right: auto;
+      width: 70%;
+      justify-content: center;
+    }
+    @media (max-width: $medium) {
+      width: 100%;
+    }
+  }
+  &__item {
+    position: relative;
+    padding: 6rem 2.4rem 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 24rem;
+    border: 1px solid #1b242d;
+    border-radius: 0.5rem;
+    transition: all 0.3s linear;
+    @media (max-width: $small) {
+      width: 30rem;
+    }
+  }
+  &__item:hover {
+    background-color: #f8be4d;
+  }
+  &__item:hover &__item-title {
+    color: #121920;
+  }
+  &__item:hover svg {
+    fill: #121920;
+  }
+  &__item:hover &__item-description {
+    color: #121920;
+  }
+  &__item svg {
+    margin-bottom: 2.4rem;
+    fill: #f8be4d;
+  }
+  &__item-title {
+    margin-bottom: 1.7rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    color: #fff;
+  }
+  &__item-description {
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 2rem;
+    color: #88939e;
+  }
+  &__item-description:not(:last-child) {
+    margin-bottom: 2.4rem;
+  }
+}
